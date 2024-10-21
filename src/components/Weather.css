@@ -1,0 +1,206 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #000000a0;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+.heading h1:last-of-type {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    flex-wrap: wrap;
+    color: #ff5733;
+}
+
+.heading h1:last-of-type svg {
+    margin-right: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.weather-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.input-row {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #007bbf;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.dropdown-container {
+    flex: 1;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #000;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bbf;
+    border-radius: 5px;
+}
+
+.weather-details {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+
+.weather-details h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: whitesmoke;
+    cursor: pointer;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #d9d9d9;
+}
+
+.small-details {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.small-details .lists {
+    height: 5rem;
+    font-size: 18px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background: #000000a9;
+    flex: 1 1 30%;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-details .lists p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  
+    .small-details p {
+        flex: 1 1 45%;
+    }
+
+    .icon p{
+        font-size:12px;
+    }
+   .heading h1:last-of-type ,h1{
+      
+       font-size: 26px;
+      
+   }
+   
+}
+
+@media (max-width: 480px) {
+   
+
+    .small-details p {
+        flex: 1 1 100%;
+    }
+       
+}
+
+.icon {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
